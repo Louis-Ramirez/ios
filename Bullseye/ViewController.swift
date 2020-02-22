@@ -1,0 +1,96 @@
+//
+//  ViewController.swift
+//  Bullseye
+//
+//  Created by Louis Ramirez on 2/3/20.
+//  Copyright © 2020 Louis Ramirez. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+        
+    @IBOutlet weak var slider:UISlider! //stores a reference to the slider as a new instance variable. (Outlet)
+    @IBOutlet weak var targetLabel: UILabel! // updates the label with a random number
+    var currentValue : Int = 50
+    var targetValue = 0
+    var score = 0
+    var round = 0
+    var string = ""
+    
+    
+    @IBOutlet weak var scoreLabel :UILabel! //connects UI Label with controller
+    @IBOutlet weak var roundLabel :UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        startNewGame()
+    }
+    
+    @IBAction func startOver(){
+        startNewGame() //can put the implementation of startnewgame here instead of startNewGame()
+    }
+
+    @IBAction func showAlert(){       //controller for button
+       let difference = abs(targetValue - currentValue)
+        var points = 100 - difference
+       
+        
+        let title: String
+        if difference == 0 {
+            title = "Perfect!"
+            points += 100
+        } else if difference < 5 {
+            title = "You almost had it!"
+            if difference == 1{
+                points += 50
+            }
+        } else if difference < 10 {
+            title = "Pretty good!"
+        } else {
+            title = "Not even close..."
+        }
+        
+        score += points
+        let message = "You scored \(points) points"
+        
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default,
+                                   handler: {_ in self.startNewRound()
+                                            })
+        
+        alert.addAction(action)
+        present(alert, animated:true, completion: nil)
+        round += 1
+      
+    }
+    @IBAction func sliderMoved(_ slider: UISlider){ //controller for slider
+        currentValue = lroundf(slider.value)
+    }
+    
+    func startNewRound(){
+        targetValue = Int.random(in:1...100)
+        currentValue = 50
+        slider.value = Float(currentValue)
+        updateLabels()
+    }
+    
+    func updateLabels(){
+        targetLabel.text = String(targetValue) //converts score which is an int into a string then updates target label
+        scoreLabel.text = String(score) //updates score label
+        roundLabel.text = String(round)
+    }
+    
+    func startNewGame(){
+        score = 0
+        round = 0
+        startNewRound()
+    }
+
+
+}
+
