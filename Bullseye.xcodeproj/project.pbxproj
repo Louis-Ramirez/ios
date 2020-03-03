@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B49D6D0240DEF78003ED705 /* HIghScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B49D6CF240DEF78003ED705 /* HIghScoresViewController.swift */; };
 		4B937CD023E90188006ED7C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B937CCF23E90188006ED7C6 /* AppDelegate.swift */; };
 		4B937CD223E90188006ED7C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B937CD123E90188006ED7C6 /* SceneDelegate.swift */; };
 		4B937CD423E90188006ED7C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B937CD323E90188006ED7C6 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B49D6CF240DEF78003ED705 /* HIghScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIghScoresViewController.swift; sourceTree = "<group>"; };
 		4B937CCC23E90188006ED7C6 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B937CCF23E90188006ED7C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B937CD123E90188006ED7C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4B937CD123E90188006ED7C6 /* SceneDelegate.swift */,
 				4B937CD323E90188006ED7C6 /* ViewController.swift */,
 				4B937CD523E90188006ED7C6 /* Main.storyboard */,
+				4B49D6CF240DEF78003ED705 /* HIghScoresViewController.swift */,
 				4B937CD823E90192006ED7C6 /* Assets.xcassets */,
 				4B937CDA23E90192006ED7C6 /* LaunchScreen.storyboard */,
 				4B937CDD23E90192006ED7C6 /* Info.plist */,
@@ -148,6 +151,7 @@
 				4B937CD423E90188006ED7C6 /* ViewController.swift in Sources */,
 				4B937CD023E90188006ED7C6 /* AppDelegate.swift in Sources */,
 				4BF2CAE72405AB0500900A9C /* AboutViewController.swift in Sources */,
+				4B49D6D0240DEF78003ED705 /* HIghScoresViewController.swift in Sources */,
 				4B937CD223E90188006ED7C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
