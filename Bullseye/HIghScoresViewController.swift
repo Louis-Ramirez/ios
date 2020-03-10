@@ -9,7 +9,8 @@
 import UIKit
 
 class HIghScoresViewController: UITableViewController {
-
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,11 +28,8 @@ class HIghScoresViewController: UITableViewController {
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+   
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -86,5 +84,19 @@ class HIghScoresViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+        
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+                            UITableViewCell {
+    let cell = tableView.dequeueReusableCell(
+                            withIdentifier: "HighScoreItem",
+                                        for: indexPath)
+        return cell
+        
+    }
+   
+    
 
 }
