@@ -25,7 +25,7 @@ class HIghScoresViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
    
@@ -84,19 +84,27 @@ class HIghScoresViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    // MARK:- Table View Data Source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+        return 5
         
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
-                            UITableViewCell {
-    let cell = tableView.dequeueReusableCell(
-                            withIdentifier: "HighScoreItem",
-                                        for: indexPath)
-        return cell
-        
-    }
-   
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+    UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HighScoreItem",for: indexPath) as! HighScoreTableViewCell
+//        cell.backgroundColor = UIColor.red;
+//        if indexPath.row == 0 {
+//            cell.nameLabel.text = "abcd"
+//            cell.scoreLabel.text = "123"
+//        } else if indexPath.row == 1 {
+//            cell.nameLabel.text = "ab"
+//            cell.scoreLabel.text = "23"
+//        }
+        
+        
 
+        return cell
+   
+    }
 }
