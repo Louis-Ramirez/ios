@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1308FA24199C840073AD36 /* HighScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1308F924199C840073AD36 /* HighScoreItem.swift */; };
 		4B36DCFD24171BFE003A96B7 /* HighScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B36DCFC24171BFE003A96B7 /* HighScoreTableViewCell.swift */; };
 		4B49D6D0240DEF78003ED705 /* HIghScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B49D6CF240DEF78003ED705 /* HIghScoresViewController.swift */; };
 		4B937CD023E90188006ED7C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B937CCF23E90188006ED7C6 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1308F924199C840073AD36 /* HighScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreItem.swift; sourceTree = "<group>"; };
 		4B36DCFC24171BFE003A96B7 /* HighScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreTableViewCell.swift; sourceTree = "<group>"; };
 		4B49D6CF240DEF78003ED705 /* HIghScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIghScoresViewController.swift; sourceTree = "<group>"; };
 		4B937CCC23E90188006ED7C6 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				4B937CD823E90192006ED7C6 /* Assets.xcassets */,
 				4B937CDA23E90192006ED7C6 /* LaunchScreen.storyboard */,
 				4B937CDD23E90192006ED7C6 /* Info.plist */,
+				4B1308F924199C840073AD36 /* HighScoreItem.swift */,
 			);
 			path = Bullseye;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				4BF2CAE72405AB0500900A9C /* AboutViewController.swift in Sources */,
 				4B49D6D0240DEF78003ED705 /* HIghScoresViewController.swift in Sources */,
 				4B937CD223E90188006ED7C6 /* SceneDelegate.swift in Sources */,
+				4B1308FA24199C840073AD36 /* HighScoreItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
